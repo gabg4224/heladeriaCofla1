@@ -1,0 +1,91 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #bbb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.tienda {
+    background-color: #bbb;
+    height: 70%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    ;
+
+}
+
+
+
+/*entrar a la tienda*/
+
+.botones {
+    outline: 1px solid white;
+    padding: 2px;
+    width: 10rem;
+    height: 3rem;
+    color: black;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    transition: all 0.3s ease;
+    position: relative;
+    justify-self: center;
+}
+
+.oculto {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    scale: 0.7;
+}
+
+.botones:hover {
+    background-color: #ccc;
+    font-size: 1.1rem;
+    cursor: pointer;
+
+}
+
+/*dentro tienda*/
+
+.contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    transform: scale(1);
+    transition: all 1s ease
+}
+
+.textContainer {
+    display: block;
+    width: 70%;
+    height: 30%;
+    background-color: white;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.bienvenida {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+}
+
+.cuerpo {
+    text-align: justify;
+    font-size: 1rem;
+    padding: 0.7rem;
+}
